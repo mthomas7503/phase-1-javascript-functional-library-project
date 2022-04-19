@@ -30,26 +30,22 @@ function myEach(col, cb) {
         return newArr
     }
 
-    function myReduce(col, cb, acc) {
-        let value
-        if (Array.isArray(col)) {
-            if (acc) {
-                for (let i = 0; i<col.length; i++) {
-                    let accl = acc
-                 value += cb(accl, col[i])}
-            }
-            else {for (let i=0; i < col.length; i++){
-                value = cb(col[i]) + cb(col[i + 1])
-            }}
+    function myReduce(col, cb, ...acc) {
+        let arr = Object.values(col)
+        let accu
+        let i
+        if (acc.length > 0) {
+            accu = acc[0]; 
+            i = 0 
         }
-        else{
-            arr = Object.values(col)
-            for(let i = 0; i < col.length; i++) {
-                accl = cb(col[i]) + cb(col[i +1])
-            }
+        else {accu = arr[0];
+        i = 1}
+
+        for (i; i < arr.length; i++) {
+            accu = cb(accu, arr[i], arr) 
         }
-        return value
-    }
+        return accu}
+       
 
     function myFind(col, pred) {
         if (Array.isArray(col)) {

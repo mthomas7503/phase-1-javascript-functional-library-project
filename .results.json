@@ -2,12 +2,12 @@
   "stats": {
     "suites": 11,
     "tests": 27,
-    "passes": 24,
+    "passes": 27,
     "pending": 0,
-    "failures": 3,
-    "start": "2022-04-19T21:49:38.655Z",
-    "end": "2022-04-19T21:49:38.961Z",
-    "duration": 306
+    "failures": 0,
+    "start": "2022-04-19T22:33:06.104Z",
+    "end": "2022-04-19T22:33:06.423Z",
+    "duration": 319
   },
   "tests": [
     {
@@ -55,7 +55,7 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myMap does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -64,31 +64,19 @@
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 40",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "40",
-        "stack": "AssertionError: expected NaN to equal 40\n    at Context.<anonymous> (test/indexTest.js:70:32)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns the correct reduced value when not passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 28",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "28",
-        "stack": "AssertionError: expected NaN to equal 28\n    at Context.<anonymous> (test/indexTest.js:75:32)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myReduce does not modify the original array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -102,7 +90,7 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myReduce does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -116,7 +104,7 @@
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -144,21 +132,21 @@
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection when an array is passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -186,14 +174,14 @@
     {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myKeys does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -213,41 +201,7 @@
     }
   ],
   "pending": [],
-  "failures": [
-    {
-      "title": "returns the correct reduced value when passed an initial value",
-      "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 40",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "40",
-        "stack": "AssertionError: expected NaN to equal 40\n    at Context.<anonymous> (test/indexTest.js:70:32)\n    at processImmediate (node:internal/timers:464:21)"
-      }
-    },
-    {
-      "title": "returns the correct reduced value when not passed an initial value",
-      "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 28",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "28",
-        "stack": "AssertionError: expected NaN to equal 28\n    at Context.<anonymous> (test/indexTest.js:75:32)\n    at processImmediate (node:internal/timers:464:21)"
-      }
-    },
-    {
-      "title": "returns the correct reduced value from object values",
-      "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
+  "failures": [],
   "passes": [
     {
       "title": "calls alert with each element passed",
@@ -294,21 +248,42 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myMap does not modify the original object",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value when passed an initial value",
+      "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
       "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value when not passed an initial value",
+      "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myReduce does not modify the original array",
-      "duration": 1,
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value from object values",
+      "fullTitle": "index.js myReduce returns the correct reduced value from object values",
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myReduce does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -322,7 +297,7 @@
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -350,21 +325,21 @@
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection when an array is passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -392,14 +367,14 @@
     {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myKeys does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
