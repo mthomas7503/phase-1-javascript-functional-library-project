@@ -31,15 +31,15 @@ function myEach(col, cb) {
     }
 
     function myReduce(col, cb, acc) {
-        let  accl = acc
-        let arr
+        let value
         if (Array.isArray(col)) {
             if (acc) {
                 for (let i = 0; i<col.length; i++) {
-                 accl += cb(col[i])}
+                    let accl = acc
+                 value += cb(accl, col[i])}
             }
             else {for (let i=0; i < col.length; i++){
-                accl = cb(col[i]) + cb(col[i + 1])
+                value = cb(col[i]) + cb(col[i + 1])
             }}
         }
         else{
@@ -48,7 +48,7 @@ function myEach(col, cb) {
                 accl = cb(col[i]) + cb(col[i +1])
             }
         }
-        return accl
+        return value
     }
 
     function myFind(col, pred) {
@@ -97,4 +97,27 @@ function myEach(col, cb) {
             return arr.slice(0, n)
         }
         else {return arr[0]}
+    }
+
+    function myLast(col, n){
+        if (n) {
+            return col.slice(col.length - n)
+        }
+        else {return col[col.length - 1]}
+    }
+
+    function myKeys(obj) {
+        let arr = []
+        for (const prop in obj) {
+            arr.push(prop)
+        }
+        return arr
+    }
+
+    function myValues(obj) {
+        let arr = []
+        for (const prop in obj) {
+            arr.push(obj[prop])
+        }
+        return arr
     }
